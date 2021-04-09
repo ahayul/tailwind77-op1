@@ -23,7 +23,7 @@ def create_lkas11(packer, frame, car_fingerprint, apply_steer, steer_req,
 
   if car_fingerprint in FEATURES["send_lfa_mfa"]:
     values["CF_Lkas_LdwsActivemode"] = int(left_lane) + (int(right_lane) << 1)
-    values["CF_Lkas_LdwsOpt_USM"] = 2
+    values["CF_Lkas_LdwsOpt_USM"] = 3
 
     # FcwOpt_USM 5 = Orange blinking car + lanes
     # FcwOpt_USM 4 = Orange car + lanes
